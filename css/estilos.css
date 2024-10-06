@@ -5,7 +5,7 @@
 }
 
 html{
-    background: url(../img/rojo.jpg);
+    background:url(../img/rojo.jpg);
 }
 
 body{
@@ -97,10 +97,14 @@ body{
 .card{
     width: 200px;
     height: 200px;
+    position: relative;
 }
 .card-img{
     width: 100%;
     height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .card-img img{
     width: 100%;
@@ -109,6 +113,8 @@ body{
 .card-info{
     width: 100%;
     height: 40%;
+    padding-left: 20px;
+    background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4));
 }
 
 
@@ -124,6 +130,44 @@ body{
 .card-info .img-info{
     width: 30px;
     height: 30px;
+}
+.card-img h4{
+    font-size: 12px;
+}
+.card-img h5{
+    font-size: 11px;
+}
+.card-img p{
+    font-size: 11px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+.card-img p span{
+    font-size: 15px;
+}
+.card-img p .img-info{
+    width: 15px;
+    height: 15px;
+}
+
+.katanas{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+}
+.card-info p{
+    margin-top: 10px;
+    font-size: 11px;
+}
+.card-info p .img-info{
+    width: 15px;
+    height: 15px;
+}
+.card-info h3{
+    margin-top: 10px;
 }
 /*---------------*/
 .main-img{
@@ -157,7 +201,7 @@ body{
     list-style: none;
     width: 30px;
     height: 30px;
-    background-color: black;
+    background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4));
     border-radius: 50%;
     margin-top: 20px;
     display: flex;
